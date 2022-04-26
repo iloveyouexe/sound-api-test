@@ -1,0 +1,10 @@
+
+
+      useEffect(() => {
+        fetch("https://reddit.com/r/meditation.json")
+          .then((res) => {
+            return res.json();
+          })
+          .then((res) => {
+            console.log(res.json);
+          });
